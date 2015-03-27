@@ -1,6 +1,6 @@
 // client.go
 package main
- 
+
 import (
 	"fmt"
 	"net/rpc"
@@ -19,7 +19,7 @@ import (
 	"container/list"
 	"sync"
 )
- 
+
 type Args struct {
 	Red []uint32
 	Green []uint32
@@ -48,7 +48,7 @@ func handleList(l *list.List, index string, dest string, wg *sync.WaitGroup) (re
 		fmt.Print(index + " " + i.Value.(Pair).Name + "\n")
 		reader, err := os.Open(rootPath+i.Value.(Pair).Name) // os.Open(strconv.Itoa(q)+".jpg")
 		if err != nil {
-		    log.Fatal(err)
+			log.Fatal(err)
 		}
 		defer reader.Close()
 
@@ -143,34 +143,34 @@ func main(){
 	// timeStart := time.Now()
 
 	files, _ := ioutil.ReadDir(rootPath)
-    for _, f := range files {
-            // fmt.Println(f.Name())
-    	if strings.Contains(f.Name(), ".") {
-	    	s := strings.Split(f.Name(), ".")
-	    	// fmt.Print(f.Name()+"\n")
-	    	if s[1] == "jpg" || s[1] == "JPG" {
-	    		format = "jpg"
-	    	} else if s[1] == "png" || s[1] == "PNG" {
-	    		format = "png"
-	    	} else {
-	    		continue
-	    	}
-	    	pair := Pair{f.Name(), format}
-	    	if i%4 == 0 {
-	    		l1.PushBack(pair)
-	    		// fmt.Print(l1.Front().Value.(Pair).Name)
-	    	} else if i%4 == 1 {
-	    		l2.PushBack(pair)
-	    	} else if i%4 == 2 {
-	    		l3.PushBack(pair)
-	    	} else if i%4 == 3 {
-	    		l4.PushBack(pair)
-	    	}
-	    	i++
+	for _, f := range files {
+			// fmt.Println(f.Name())
+		if strings.Contains(f.Name(), ".") {
+			s := strings.Split(f.Name(), ".")
+			// fmt.Print(f.Name()+"\n")
+			if s[1] == "jpg" || s[1] == "JPG" {
+				format = "jpg"
+			} else if s[1] == "png" || s[1] == "PNG" {
+				format = "png"
+			} else {
+				continue
+			}
+			pair := Pair{f.Name(), format}
+			if i%4 == 0 {
+				l1.PushBack(pair)
+				// fmt.Print(l1.Front().Value.(Pair).Name)
+			} else if i%4 == 1 {
+				l2.PushBack(pair)
+			} else if i%4 == 2 {
+				l3.PushBack(pair)
+			} else if i%4 == 3 {
+				l4.PushBack(pair)
+			}
+			i++
 
-    	} else {
-    		continue
-    	}
+		} else {
+			continue
+		}
 
  //    }
 
@@ -242,12 +242,12 @@ func main(){
 	}
 
 	var wg sync.WaitGroup
-    wg.Add(4)
+	wg.Add(4)
 
-    out1 := make(chan string)
-    out2 := make(chan string)
-    out3 := make(chan string)
-    out4 := make(chan string)
+	out1 := make(chan string)
+	out2 := make(chan string)
+	out3 := make(chan string)
+	out4 := make(chan string)
 
 	go func() {
 		out1 <- handleList(l1, "1", "10.151.12.202:6060", &wg)
