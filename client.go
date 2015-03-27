@@ -34,7 +34,7 @@ type Pair struct {
 
 const rootPath = "C:/cygwin64/home/user/coba/SISTER/"
 
-func handleList(l *list.List, index string, dest string, wg *sync.WaitGroup) {
+func handleList(l *list.List, index string, dest string, wg *sync.WaitGroup) (result string) {
 	defer wg.Done()
 	client, err := rpc.Dial("tcp", dest)
 	if err != nil {
@@ -115,6 +115,8 @@ func handleList(l *list.List, index string, dest string, wg *sync.WaitGroup) {
 
 	fmt.Printf("%s %v\n", index, timeEnd.Sub(timeStart))
 
+	result = "yey"
+	return
 	
 }
  
@@ -242,14 +244,29 @@ func main(){
 	var wg sync.WaitGroup
     wg.Add(4)
 
-	go handleList(l1, "1", "10.151.12.202:6060", &wg)
-	go handleList(l2, "2", "10.151.12.202:6060", &wg)
-	go handleList(l3, "3", "10.151.12.202:6060", &wg)
-	handleList(l4, "4", "10.151.12.201:6060", &wg)
+    out1 := make(chan string)
+    out2 := make(chan string)
+    out3 := make(chan string)
+    out4 := make(chan string)
 
-	for true {
+	go func() {
+		out1 <- handleList(l1, "1", "10.151.12.202:6060", &wg)
+	}()
+	go func() {
+		out2 <- handleList(l2, "2", "10.151.12.202:6060", &wg)
+	}()
+	go func() {
+		out3 <- handleList(l3, "3", "10.151.12.202:6060", &wg)
+	}()
+	go func() {
+		out4 <- handleList(l4, "4", "10.151.12.201:6060", &wg)
+	}()
 
-	}
+	fmt.Print(<-out1 + " " + <-out2 + " " + <-out3 + " " + <-out4 + "\n")
+
+	// for true {
+
+	// }
 
 	// timeEnd := time.Now()
 
