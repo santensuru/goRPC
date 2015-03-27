@@ -34,9 +34,9 @@ type Pair struct {
 
 const rootPath = "C:/cygwin64/home/user/coba/SISTER/"
 
-func handleList(l *list.List, index string, wg *sync.WaitGroup) {
+func handleList(l *list.List, index string, dest string, wg *sync.WaitGroup) {
 	defer wg.Done()
-	client, err := rpc.Dial("tcp", "127.0.0.1:6060")
+	client, err := rpc.Dial("tcp", dest)
 	if err != nil {
 		log.Fatal("dialing:", err)
 	}
@@ -242,10 +242,10 @@ func main(){
 	var wg sync.WaitGroup
     wg.Add(4)
 
-	go handleList(l1, "1", &wg)
-	go handleList(l2, "2", &wg)
-	go handleList(l3, "3", &wg)
-	handleList(l4, "4", &wg)
+	go handleList(l1, "1", "10.151.12.202:6060", &wg)
+	go handleList(l2, "2", "10.151.12.202:6060", &wg)
+	go handleList(l3, "3", "10.151.12.202:6060", &wg)
+	handleList(l4, "4", "10.151.12.201:6060", &wg)
 
 	for true {
 

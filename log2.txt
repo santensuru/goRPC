@@ -1,0 +1,102 @@
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Users\user>cd Documents
+
+C:\Users\user\Documents>cd "Go Projects"
+
+C:\Users\user\Documents\Go Projects>cd sister_rpc_grayscale
+
+C:\Users\user\Documents\Go Projects\sister_rpc_grayscale>go run client.go
+2 beach_wood.png
+3 berries.png
+1 barrier.png
+4 bricks.png
+3 christmas_hedge.png
+3 disconnected_shift.png
+2 central_park.jpg
+4 clean_walls.png
+1 cattle.png
+1 clean_walls_copy.png
+4 egyptian.png
+2 dark_and_bright.png
+1 extension.png
+3 four_babies.png
+4 giraffe.png
+4 jellyfish_chaos.png
+3 horses.png
+3 kore.png
+1 giraffe_copy.png
+1 knight_moves.png
+1 malawi_copy.png
+2 fountain.jpg
+4 malawi.png
+2015/03/27 10:31:26 arith error:WSARecv tcp 10.151.12.220:2634: An existing conn
+ection was forcibly closed by the remote host.
+exit status 1
+
+C:\Users\user\Documents\Go Projects\sister_rpc_grayscale>go run client.go
+1 barrier.png
+3 berries.png
+2 beach_wood.png
+2015/03/27 10:37:56 dialing:dial tcp 10.151.12.201:6060: ConnectEx tcp: A connec
+tion attempt failed because the connected party did not properly respond after a
+ period of time, or established connection failed because connected host has fai
+led to respond.
+exit status 1
+
+C:\Users\user\Documents\Go Projects\sister_rpc_grayscale>go run client.go
+4 bricks.png
+1 barrier.png
+3 berries.png
+2 beach_wood.png
+3 christmas_hedge.png
+3 disconnected_shift.png
+2 central_park.jpg
+4 clean_walls.png
+1 cattle.png
+4 egyptian.png
+1 clean_walls_copy.png
+1 extension.png
+2 dark_and_bright.png
+4 giraffe.png
+4 jellyfish_chaos.png
+3 four_babies.png
+1 giraffe_copy.png
+1 knight_moves.png
+1 malawi_copy.png
+2 fountain.jpg
+3 horses.png
+2 hedge.png
+1 noise_pattern.png
+3 kore.png
+4 malawi.png
+2 knight_moves_copy.png
+2 mask.png
+1 sails.png
+4 no_beach.png
+3 mykene.png
+2 port.png
+3 red_tower.png
+1 stone_ghost.png
+2 scotland.png
+4 sailing.png
+1 tapestry.jpg
+3 ship_number.png
+2 supermarket.jpg
+1 tree.png
+2 threehundred.jpg
+1 wood_carvings.png
+2 wading.png
+3 swan.png
+4 statue.png
+1 5m13.1229096s
+4 sweets.png
+3 threehundred.png
+2 writing_history.png
+3 white.png
+4 tree.jpg
+4 window.png
+2 5m44.6137108s
+3 5m45.9977899s
+4 5m52.2421471s
