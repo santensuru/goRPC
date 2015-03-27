@@ -1,0 +1,67 @@
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Users\user>cd Documents
+
+C:\Users\user\Documents>cd "Go Projects"
+
+C:\Users\user\Documents\Go Projects>cd sister_rpc_grayscale
+
+C:\Users\user\Documents\Go Projects\sister_rpc_grayscale>go run client.go
+2015/03/27 22:02:22 1 barrier.png
+2015/03/27 22:02:22 3 berries.png
+2015/03/27 22:02:22 2 beach_wood.png
+2015/03/27 22:02:22 4 bricks.png
+2015/03/27 22:02:47 3 christmas_hedge.png
+2015/03/27 22:03:07 3 disconnected_shift.png
+2015/03/27 22:03:08 2 central_park.jpg
+2015/03/27 22:03:24 4 clean_walls.png
+2015/03/27 22:03:25 1 cattle.png
+2015/03/27 22:03:29 4 egyptian.png
+2015/03/27 22:03:30 1 clean_walls_copy.png
+2015/03/27 22:03:33 1 extension.png
+2015/03/27 22:03:39 2 dark_and_bright.png
+2015/03/27 22:03:47 4 giraffe.png
+2015/03/27 22:03:52 4 jellyfish_chaos.png
+2015/03/27 22:03:58 3 four_babies.png
+2015/03/27 22:04:10 1 giraffe_copy.png
+2015/03/27 22:04:12 2 fountain.jpg
+2015/03/27 22:04:12 1 knight_moves.png
+2015/03/27 22:04:20 1 malawi_copy.png
+2015/03/27 22:04:25 3 horses.png
+2015/03/27 22:04:26 2 hedge.png
+2015/03/27 22:04:43 1 noise_pattern.png
+2015/03/27 22:04:44 4 malawi.png
+2015/03/27 22:04:53 3 kore.png
+2015/03/27 22:05:01 2 knight_moves_copy.png
+2015/03/27 22:05:08 4 no_beach.png
+2015/03/27 22:05:17 2 mask.png
+2015/03/27 22:05:44 2 port.png
+2015/03/27 22:05:49 3 mykene.png
+2015/03/27 22:05:52 4 sailing.png
+2015/03/27 22:05:53 1 sails.png
+2015/03/27 22:06:08 2 scotland.png
+2015/03/27 22:06:21 3 red_tower.png
+2015/03/27 22:06:38 2 supermarket.jpg
+2015/03/27 22:06:46 3 ship_number.png
+2015/03/27 22:06:54 1 stone_ghost.png
+2015/03/27 22:06:55 4 statue.png
+2015/03/27 22:06:58 2 threehundred.jpg
+2015/03/27 22:07:12 2 wading.png
+2015/03/27 22:07:12 3 swan.png
+2015/03/27 22:07:23 1 tapestry.jpg
+2015/03/27 22:07:27 4 sweets.png
+2015/03/27 22:07:53 1 tree.png
+2015/03/27 22:07:56 1 wood_carvings.png
+2015/03/27 22:07:57 3 threehundred.png
+2015/03/27 22:07:59 4 tree.jpg
+2015/03/27 22:08:02 4 window.png
+2015/03/27 22:08:05 2 writing_history.png
+2015/03/27 22:08:12 3 white.png
+2015/03/27 22:08:25 2 6m2.6047398s
+2015/03/27 22:08:34 3 6m12.1932882s
+2015/03/27 22:08:38 4 6m16.2015175s
+2015/03/27 22:08:41 1 6m19.008678s
+2015/03/27 22:08:41 yey yey yey yey
+
+C:\Users\user\Documents\Go Projects\sister_rpc_grayscale>

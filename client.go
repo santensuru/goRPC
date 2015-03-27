@@ -2,7 +2,7 @@
 package main
 
 import (
-	"fmt"
+	// "fmt"
 	"net/rpc"
 	"log"
 	"image"
@@ -45,7 +45,7 @@ func handleList(l *list.List, index string, dest string, wg *sync.WaitGroup) (re
 
 	for i := l.Front(); i != nil; i = i.Next() {
 
-		fmt.Print(index + " " + i.Value.(Pair).Name + "\n")
+		log.Print(index + " " + i.Value.(Pair).Name + "\n")
 		reader, err := os.Open(rootPath+i.Value.(Pair).Name) // os.Open(strconv.Itoa(q)+".jpg")
 		if err != nil {
 			log.Fatal(err)
@@ -113,7 +113,7 @@ func handleList(l *list.List, index string, dest string, wg *sync.WaitGroup) (re
 
 	timeEnd := time.Now()
 
-	fmt.Printf("%s %v\n", index, timeEnd.Sub(timeStart))
+	log.Printf("%s %v\n", index, timeEnd.Sub(timeStart))
 
 	result = "yey"
 	return
@@ -262,7 +262,7 @@ func main(){
 		out4 <- handleList(l4, "4", "10.151.12.201:6060", &wg)
 	}()
 
-	fmt.Print(<-out1 + " " + <-out2 + " " + <-out3 + " " + <-out4 + "\n")
+	log.Print(<-out1 + " " + <-out2 + " " + <-out3 + " " + <-out4 + "\n")
 
 	// for true {
 
