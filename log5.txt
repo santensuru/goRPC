@@ -1,0 +1,71 @@
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Users\user>cd Documents
+
+C:\Users\user\Documents>cd "Go Projects"
+
+C:\Users\user\Documents\Go Projects>cd sister_rpc_grayscale
+
+C:\Users\user\Documents\Go Projects\sister_rpc_grayscale>go run client.go
+2015/05/29 12:36:46 4 bricks.png
+exit status 2
+
+C:\Users\user\Documents\Go Projects\sister_rpc_grayscale>go run client.go
+2015/05/29 12:37:09 1 barrier.png
+2015/05/29 12:37:09 4 bricks.png
+2015/05/29 12:37:09 3 berries.png
+2015/05/29 12:37:09 2 beach_wood.png
+2015/05/29 12:37:42 3 christmas_hedge.png
+2015/05/29 12:37:56 1 cattle.png
+2015/05/29 12:37:57 2 central_park.jpg
+2015/05/29 12:38:00 1 clean_walls_copy.png
+2015/05/29 12:38:03 3 disconnected_shift.png
+2015/05/29 12:38:03 1 extension.png
+2015/05/29 12:38:16 2 dark_and_bright.png
+2015/05/29 12:38:47 2 fountain.jpg
+2015/05/29 12:38:52 4 clean_walls.png
+2015/05/29 12:38:57 4 egyptian.png
+2015/05/29 12:39:00 1 giraffe_copy.png
+2015/05/29 12:39:02 3 four_babies.png
+2015/05/29 12:39:03 1 knight_moves.png
+2015/05/29 12:39:05 2 hedge.png
+2015/05/29 12:39:22 1 malawi_copy.png
+2015/05/29 12:39:30 4 giraffe.png
+2015/05/29 12:39:32 4 jellyfish_chaos.png
+2015/05/29 12:39:37 2 knight_moves_copy.png
+2015/05/29 12:39:39 3 horses.png
+2015/05/29 12:39:48 2 mask.png
+2015/05/29 12:39:52 1 noise_pattern.png
+2015/05/29 12:40:08 3 kore.png
+2015/05/29 12:40:23 2 port.png
+2015/05/29 12:40:31 4 malawi.png
+2015/05/29 12:40:46 3 mykene.png
+2015/05/29 12:40:52 1 sails.png
+2015/05/29 12:40:59 4 no_beach.png
+2015/05/29 12:41:04 2 scotland.png
+2015/05/29 12:41:30 3 red_tower.png
+2015/05/29 12:41:45 4 sailing.png
+2015/05/29 12:41:45 2 supermarket.jpg
+2015/05/29 12:41:56 1 stone_ghost.png
+2015/05/29 12:41:59 3 ship_number.png
+2015/05/29 12:42:04 2 threehundred.jpg
+2015/05/29 12:42:24 2 wading.png
+2015/05/29 12:42:30 1 tapestry.jpg
+2015/05/29 12:42:40 3 swan.png
+2015/05/29 12:42:47 4 statue.png
+2015/05/29 12:42:58 1 tree.png
+2015/05/29 12:43:01 1 wood_carvings.png
+2015/05/29 12:43:04 2 writing_history.png
+2015/05/29 12:43:12 4 sweets.png
+2015/05/29 12:43:32 2 6m21.9638471s
+2015/05/29 12:43:36 3 threehundred.png
+2015/05/29 12:43:41 4 tree.jpg
+2015/05/29 12:43:43 4 window.png
+2015/05/29 12:43:47 1 6m37.243721s
+2015/05/29 12:43:48 3 white.png
+2015/05/29 12:44:05 4 6m55.4237609s
+2015/05/29 12:44:07 3 6m57.7468937s
+2015/05/29 12:44:07 yey yey yey yey
+
+C:\Users\user\Documents\Go Projects\sister_rpc_grayscale>
